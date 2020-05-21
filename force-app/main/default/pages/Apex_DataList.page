@@ -1,0 +1,16 @@
+<apex:page standardController="Account" recordSetVar="items">
+    <apex:form >
+    	<apex:dataList value="{!items}" var="a">
+            <apex:image value="{!$Resource.MyImage}" style="width:20px;height:10px;" />
+        	{!a.name} 
+        </apex:dataList>
+        <apex:repeat value="{!items}" var="a">
+        	{!a.name}
+        </apex:repeat>
+         <apex:repeat value="{!items}" var="a">
+             <apex:image value="{!$Resource.MyImage}" style="width:20px;height:15px;" />
+             
+             &nbsp;&nbsp;{!a.name} <br/>
+        </apex:repeat>
+    </apex:form>
+</apex:page>
