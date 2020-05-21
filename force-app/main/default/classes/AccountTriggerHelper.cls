@@ -1,4 +1,5 @@
 public class AccountTriggerHelper {
+    //vsc commit test
  //   public static boolean allowrun=true;
     public static Integer exec = 0;
     public static void mycityupdate(List<Account> accts,Map<Id,Account> NewMap, Map<Id,Account> OldMap){
